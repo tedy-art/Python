@@ -1,0 +1,15 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user = "root",
+    password = "tejas@123",
+    database = "mydatabase"
+)
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM customer LIMIT 5")
+myresult = mycursor.fetchall()
+
+for x in myresult:
+    print(x)
