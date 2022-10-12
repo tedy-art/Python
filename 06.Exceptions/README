@@ -1,0 +1,17 @@
+Excaeption:
+A Python program terminates as soon as it encounters an error. In Python, an error can
+be a syntax error or an exception. In this article, you will see what an exception is
+and how it differs from a syntax error. After that, you will learn about raising
+exceptions and making assertions. Then, you’ll finish with a demonstration of the try
+and except block.
+
+tyr:-
+The try block lets you test a block of code for errors.
+except:-
+The except block lets you handle the error.
+else:-
+The else block lets you execute code when there is no error.
+finally:-
+The finally block lets you execute code, regardless of the result of the try-
+and except blocks.
+
