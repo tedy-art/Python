@@ -27,3 +27,11 @@ How to use the return keyword in python:
 
 The return statement can contain an expression to execute once the function is called.
 
+Arbitary argument, *args:
+    If you do not know hoe many arguments that will be passed into your function, add
+    a "*" before the parameter name in the function definition.
+Syntax:
+    def functionName(*args):
+        #statement(s)
+
+    functionName(argValue1,argValue2,argValue3,.....argValueN)
