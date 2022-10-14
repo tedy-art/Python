@@ -20,3 +20,10 @@ syntax:
 When the function is called, then you need to specify a value for the arguments
 syntax:
     function_name(arg1, arg2)
+
+How to use the return keyword in python:
+    In python, you can use the keyword return to exit a function so it goes back to
+    where it was called. That is send something out of the function.
+
+The return statement can contain an expression to execute once the function is called.
+
