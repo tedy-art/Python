@@ -8,6 +8,7 @@ for entry in randomList:
         break
     except:
         print("Ooops!", sys.exc_info()[0],"occured.")
+        #exc_info():To obtain the execution information for the current thread,format the results & prints the text to a file handle.
         print("Next entry.")
         print()
 print("The reciprocal of", entry, "is", r)
