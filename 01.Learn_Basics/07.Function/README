@@ -9,3 +9,14 @@ Basic sysntax for defining a Function in python:
         retrun expressions
 To call this function syntax:-
     function_name()
+
+Arguments in pythn function:
+    while definig a function in python, you can pass argument(s) into the function by
+    putting them inside the parenthesis.
+
+syntax:
+    def function_name(arg1, arg2):
+        #what to do with function
+When the function is called, then you need to specify a value for the arguments
+syntax:
+    function_name(arg1, arg2)
