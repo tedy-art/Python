@@ -1,0 +1,11 @@
+FUNCTION:
+    A function is a block of code which is only runs when it is called.
+    you can pass data, known as parameter, into function.
+    A function can return data as a result.
+
+Basic sysntax for defining a Function in python:
+    def function_name(parameter):
+        #statement(s)
+        retrun expressions
+To call this function syntax:-
+    function_name()
