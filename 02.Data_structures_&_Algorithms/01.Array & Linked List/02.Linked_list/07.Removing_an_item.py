@@ -35,11 +35,11 @@ class SLinkedList:
         HeadVal = None
 
 
-def LListprint(self):
-    printval = self.head
-    while (printval):
-        print(printval.data),
-        printval = printval.next
+    def LListprint(self):
+        printval = self.head
+        while (printval):
+            print(printval.data),
+            printval = printval.next
 
 
 llist = SLinkedList()
