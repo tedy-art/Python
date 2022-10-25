@@ -15,15 +15,17 @@ Peek:   Get the value of the top element without removing it.
 
 The functions associated with stack are:
 
-empty() – Returns whether the stack is empty – Time Complexity: O(1)
-size() – Returns the size of the stack – Time Complexity: O(1)
-top() / peek() – Returns a reference to the topmost element of the stack – Time Complexity: O(1)
-push(a) – Inserts the element ‘a’ at the top of the stack – Time Complexity: O(1)
-pop() – Deletes the topmost element of the stack – Time Complexity: O(1)
+empty() –Returns whether the stack is empty – Time Complexity: O(1)
+size() –Returns the size of the stack – Time Complexity: O(1)
+top()/peek()–Returns a reference to the topmost element of the stack–Time Complexity: O(1)
+push(a) –Inserts the element ‘a’ at the top of the stack – Time Complexity: O(1)
+pop() –Deletes the topmost element of the stack – Time Complexity: O(1)
 
 
 Implementation:
-There are various ways from which a stack can be implemented in Python. This article covers the implementation of a stack using data structures and modules from the Python library.
+There are various ways from which a stack can be implemented in Python. This article
+covers the implementation of a stack using data structures and modules from the Python
+library.
 Stack in Python can be implemented using the following ways:
 1.list
 2.Collections.deque
