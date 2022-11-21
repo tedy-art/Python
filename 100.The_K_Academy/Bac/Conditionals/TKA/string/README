@@ -1,0 +1,56 @@
+5] STRING Data types
+ 1)Anything we write inside '' or "" is nothing but string data in python
+
+Note:
+    1)There is no char data type in python.
+    2)if specify anything in '' or"" is sting.
+
+Syntax:
+  var_name = "value"
+
+e.g.
+  c = '10'
+  type(c) # <class 'str'>
+
+  s = "python"
+  type(s) # <class 'str'>
+
+
+** Memory Representation :
+by using array , 0 to n
+
+ I N S T A G R A M
+ 0 1 2 3 4 5 6 7 8
+ ---------------->
+ left to right
+
+ 1> Python supports 0 base indexing
+ 2> There are two types of indexing
+        i) forword/ +ve
+        ii) Reverse/ -ve
+        iii) -ve /Reverse indexing start with -1, Right ot left
+
+ I   N   S   T   A   G   R   A   M
+ -9 -8  -7  -6  -5  -4  -3  -2  -1
+   <-----------------------
+   right to left
+
+** accessing value using index
+   - To fetch single element from string we can use indexing
+
+   Syntax:
+    var_name = "value"
+    var_name[index_value]
+
+** slice on string
+-To fetch multiple elements from string we can use slice
+Syntax:
+  var_name = "value"
+  var_name = [start_index:end_index]
+
+e.g.
+s = "Instagram"
+print(s[1 : 6])
+print(s[-1 : -5])
+print(s[1 : 6])
+print(s[6 : -7])
