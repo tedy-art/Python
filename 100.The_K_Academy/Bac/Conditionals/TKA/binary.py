@@ -9,6 +9,6 @@ print(type(my_var))
 print(my_var)
 
 # Hexadecimal
-my_var = 0xFACE
+my_var = 0xFace23
 print(type(my_var))
 print(my_var)
