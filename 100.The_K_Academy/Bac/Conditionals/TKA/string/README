@@ -35,6 +35,12 @@ by using array , 0 to n
    <-----------------------
    right to left
 
+# WAP to print element from given string from its index value.Ask user to enter index value
+
+a = "Instagram"
+b = int(input("index"))
+print(a[b])
+
 ** accessing value using index
    - To fetch single element from string we can use indexing
 
