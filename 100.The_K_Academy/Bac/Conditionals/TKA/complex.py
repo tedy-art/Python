@@ -1,8 +1,8 @@
-c = 10 + 20j
-print(type(c))
-print(c)
+# c = 10 + 20j
+# print(type(c))
+# print(c)
 
 
-# complex()
-# bin()
-# oct()
+a = 4 + 8j
+b = 3 + 2j
+print(a+b)
