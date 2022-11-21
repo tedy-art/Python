@@ -8,7 +8,7 @@ my_var = 0o342
 print(type(my_var))
 print(my_var)
 
-# Hexadecimal
+# Hexadecimal num
 my_var = 0xFace23
 print(type(my_var))
 print(my_var)
