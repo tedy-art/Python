@@ -60,3 +60,35 @@ print(s[1 : 6])
 print(s[-1 : -5])
 print(s[1 : 6])
 print(s[6 : -7])
+
+<----------------------------------22/11/2022----------------------------->
+
+** PM on syntax:
+    stn :
+       var_name[start:end]
+
+i) start value is optional and default start index is 0
+ sty :
+   varname[ :stop] # This slice return 0 to stop_index -1 elements
+  e.g.
+  s = "INSTAGRAM"
+  print(s[:7])
+
+ii) End index is optional and default and index is -1 or len(s)-1
+ sty :
+ varname[start_index:] # This slice will return start_index to len(str)-1 element
+
+ iii) Start index and stop index are both optional
+
+ sty :
+    varname[:] #this will return complete str
+
+
+
+  iv) step size in slice:
+  step size is also optional and default value of step size is +1
+***imp***
+step size in slice:
+    syntax:
+        varname = [start_index : stop_index : step_size]
+
