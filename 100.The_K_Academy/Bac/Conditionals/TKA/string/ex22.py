@@ -7,4 +7,4 @@ s = "INSTAGRAM"
 # print(s[   :  6   : 2 ])
 # print(s[ 8 :  -7 : -2])
 # print(s.index('A'))
-print(-1:-4 :2)
+# print(s[-1:-4 :2])
