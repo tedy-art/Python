@@ -1,0 +1,39 @@
+6] List data types
+-> List is ordered, mutable, heterogenious collection elements where insertion us preserved
+and duplicates are allowed
+**Meaning of some imp words:-
+    1)Ordered :- Index is present
+    2)Mutable :- Changeable
+    3)Heterogenios collection of element :- we can add diff data types in list e.g.int,
+                                            float, bool, complex, list, etc..,
+    4)Insertion order is preserved :- data will be added as per index
+    5)Duplicate are allowed :-
+
+Syntax :
+  my_list =[]
+  type(my_list) # <class 'list'>
+
+** How to add data into list??
+->by using append method
+syntax :
+     i = []
+     i.append(value)
+
+e.g.
+    i = []
+    i.append(10) #[10]
+    i.append(20.5) #[10, 20.5]
+    i.append('Sai') #[10, 20.5, 'Sai']
+    i.append(True) #[10, 20.5, 'Sai', True]
+    i.append(10+20j) #[10, 20.5, 'Sai', True, 10+20j]
+    i.append('Sai')#[10, 20.5, 'Sai', True, 10+20j, 'Sai']
+
+Q.how to access list data??
+-> by using index and slice
+syntax :
+    var_name = [value]
+    var_name [index_value]
+
+syntax slice :
+    var_name = []
+    var_name[start_index : end_index : step_index]
