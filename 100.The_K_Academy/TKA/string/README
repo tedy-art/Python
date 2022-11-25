@@ -1,0 +1,104 @@
+5] STRING Data types
+ 1)Anything we write inside '' or "" is nothing but string data in python
+
+Note:
+    1)There is no char data type in python.
+    2)if specify anything in '' or"" is string.
+
+Syntax:
+  var_name = "value"
+
+e.g.
+  c = '10'
+  type(c) # <class 'str'>
+
+  s = "python"
+  type(s) # <class 'str'>
+
+
+** Memory Representation :
+by using array , 0 to n
+
+ I N S T A G R A M
+ 0 1 2 3 4 5 6 7 8
+ ---------------->
+ left to right
+
+ 1> Python supports 0 base indexing
+ 2> There are two types of indexing
+        i) forword/ +ve
+        ii) Reverse/ -ve
+ 3> +ve /Forword indexing start with 0, Left to Right
+ 4> -ve /Reverse indexing start with -1, Right ot left
+
+ I   N   S   T   A   G   R   A   M
+ -9 -8  -7  -6  -5  -4  -3  -2  -1
+   <-----------------------
+   right to left
+
+# WAP to print element from given string from its index value.Ask user to enter index value
+
+a = "Instagram"
+b = int(input("index"))
+print(a[b])
+
+** accessing value using index
+   - To fetch single element from string we can use indexing
+
+   Syntax:
+    var_name = "value"
+    var_name[index_value]
+
+** slice on string
+-To fetch multiple elements from string we can use slice
+Syntax:
+  var_name = "value"
+  var_name[start_index:end_index]
+
+e.g.
+s = "Instagram"
+print(s[1 : 6])
+print(s[-1 : -5])
+print(s[1 : 6])
+print(s[6 : -7])
+
+<----------------------------------22/11/2022----------------------------->
+
+** PM on syntax:
+    sty :
+       var_name[start:end]
+
+i) start value is optional and default start index is 0
+ sty :
+   var_name[ :stop] # This slice return 0 to stop_index -1 elements
+ e.g.
+  s = "INSTAGRAM"
+  print(s[:7])
+o/p:
+INSTAGR
+
+ii) End index is optional and default and index is -1 or len(s)-1
+sty :
+    var_name[start_index:] # This slice will return start_index to len(str)-1 element
+e.g.
+    s = "INSTAGRAM"
+    print(s[5:])
+o/p:
+    GRAM
+iii) Start index and stop index are both optional
+sty :
+    var_name[:] #this will return complete str
+e.g.
+    s = "INSTAGRAM"
+    print(s[:])
+o/p:
+  INSTAGRAM
+
+iv) step size in slice:
+  step size is also optional and default value of step size is +1
+***imp***
+step size in slice:
+syntax:
+    varname = [start_index : stop_index : step_size]
+
+
