@@ -1,0 +1,41 @@
+7)Tuple
+-> Tuple is exactly same like list. The only diff is list is mutable and Tuple is Immutable
+
+** What is Tuple??
+-> List is ordered, Immutable, heterogeneous collection elements where insertion us preserved
+    and duplicates are allowed
+        immutable -> Non Changeable
+
+** How to create tuple??
+syntax :-
+    var_name = ()
+    type(var_name) #<class 'tuple'>
+
+e.g.
+    t = (10, 20, 30, 40)
+
+** How to access data from tuple object ??
+-> by using index and slice
+
+ my_tuple = ("apple","Banana","Cherry")
+ print(my_tuple[1])
+ print(my_tuple[-1])
+ o/p:
+    Banana
+    Cherry
+
+** What is the defferance between list and Tuple ??
+        list
+1)Mutable
+2)Comma separated value inside
+  square brackets
+3)Unpacking of data is possible.
+4)if data is growable means changeable then use list.
+5)List is slower than tuple
+
+        Tuple
+1)Immutable
+2)Comma separed value inside round brackets.
+3)Packing and unpacking of data both are possible.
+4)If data is fixed or static then use tuple.
+5)Tuple faster than list.

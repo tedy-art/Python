@@ -1,0 +1,15 @@
+s = set('FACEBOOK')
+print(s)
+print(type(s), id(s))
+s.add('INSTAGRAM')
+print(s, type(s), id(s))
+s.add(10)
+s.add(20.5)
+s.add("SAI")
+s.add(10)
+print(s, type(s), id(s))
+
+l1 = (10, 20, 30, 40)
+s.add(l1)
+print(s, type(s), id(s))
+

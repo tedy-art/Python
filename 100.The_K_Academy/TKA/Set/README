@@ -1,0 +1,69 @@
+8] SET
+-> It is Un-ordered, Mutable, Heterogenious collection of immutable elements Where insertion
+   order is NOT preserved and duplicates is not allowed.
+* Un-ordered -> no index is present.
+
+** How to create set object??
+syntax :
+    var_name = set(sequence)
+    type(var_name) #<class 'set'>
+
+** How to add data into set??
+-> by using add method
+syntax:
+    var_name = set()
+    var_name.add()
+
+e.g.:
+    var_name = set()
+    var_name.add(10)
+
+** How to remove data from set??
+-> by using remove method
+syntax :
+    var_name = set()
+    var_name.remove(value)
+
+e.g.:
+    var_name = set()
+    var_name.remove(10)
+EX>
+s = set()
+print(s, type(s), id(s))
+
+s.add('INSTAGRAM')
+print(s, type(s), id(s))
+s.add(10)
+s.add(20.5)
+s.add("SAI")
+s.add(10)
+print(s, type(s), id(s))
+
+l1 = (10, 20, 30, 40)
+s.add(l1)
+print(s, type(s), id(s))
+
+** How to access set data
+-> by using for loop
+
+syntax:
+     for temp_var in sequence:
+        for_loop_body
+        state_1
+        state_2
+        .....
+
+for -> keyword
+temp_var -> temporary variable
+sequence -> means more than one elements e.g. list, tuple, str, set, frozenset, dict, range, etc...
+: -> means end of loop header part
+4 space -> This is standard 4 spaces Indentation.
+
+***Frozenset***
+->  It is exactly same as set the only diff is set is mutable and frozen set is
+    immutable
+->  It is Un-ordered, IM-Mutable, Heterogenious collection of immutable elements Where
+    insertion order is NOT preserved and duplicates is not allowed.
+
+syntax :
+    var_name = frozenset(sequence)
