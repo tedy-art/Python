@@ -2,24 +2,24 @@
 -> This will return sequence of whole number.
 
 there are three ways  to use range function:
-1] range(n)
+1] range(n):
 -> This will return sequence of 0 to n-1 whole number.
 e.g.
     r = range(10)
     for i in r:
-    print(r)
+         print(r)
 
 2] range(start_val, stop_val):
 -> This will return sequence of start value to end_value-1 whole numbers.
 e.g.
     r = range(0,11)
     for i in r:
-    print(i)
+          print(i)
 
-3] range(start_val, end_val, step_val) :
+3] range(start_val, end_val, step_val):
 -> This will return sequence of start value to end_value-1 whole number with specified
    step value
    e.g.
    r = range(2,11,2)
    for i in r:
-    print(i)
+          print(i)
