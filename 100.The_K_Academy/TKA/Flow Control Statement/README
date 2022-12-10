@@ -24,4 +24,52 @@ i] if statement :->
     e.g.
     age = 19
     if age > 18:
-        print("You are Eligible")
+        print("You are Eligible.")
+    o/p:
+    You are Eligible.
+here,
+if  -> if is a keyword and it is used to start the if statement.
+    -> conditional can be anything and o/p of condition is always in  boolean(True/False)
+    -> If the condition is True then the if block execute.
+Indentation
+    -> 4 space
+
+ii] if_else statement :->
+    Syntax:-
+        if condition:
+            if_block
+        else:
+            else_block
+
+    e.g.
+    age = 16
+    if age > 18:
+        print("You are eligible.")
+    else:
+        print("You are not eligible.")
+o/p:
+    You are not eligible.
+
+iii] if_elif_else statement:->
+syntax:
+    if condition:
+        if_block
+    elif condition:
+        elif_block
+    else:
+        else_block
+
+e.g.
+    marks = 85
+    if marks > 90:
+        print("Grade A")
+    elif marks > 80 and marks < 90:
+        print("Grade B")
+    elif marks > 60 and marks < 80:
+        print("Grade C")
+    else:
+        print("You are Fail..")
+
+
+here,
+-> if the condition is greater than one then we will use if-elif-else statement.
