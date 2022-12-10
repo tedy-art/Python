@@ -1,4 +1,5 @@
-# WAP to print table of 6 using range function??
-r = range(6, 66, 6)
-for i in r:
-    print(i)
+# WAP to print table from given range of numbers
+tab = int(input("Enter Table : "))
+
+for i in range(1, 11):
+    print(i*tab)
