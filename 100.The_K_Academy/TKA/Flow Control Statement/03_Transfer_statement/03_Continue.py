@@ -7,3 +7,4 @@ for i in l:
     else:
         num = i * -1
         l_new.append(num)
+print(l_new)
