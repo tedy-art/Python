@@ -1,0 +1,27 @@
+Flow control statement:-
+A program's control flow is the order in ehich the program's code executes.
+The control floe of python program is regulated by conditional statements, loops, and function calls.
+
+Flow control system :-
+1] Conditional Statement
+2] Iterative Statement
+3] Transfer Statement
+
+1] Conditional statement :->
+According to some condition if i want to execute some block of code we can use conditional
+statement.
+
+Types of Conditional statement :->
+i]   if statement
+ii]  if_else statement
+iii] if_elif_else Statement
+
+i] if statement :->
+    syntax:
+        if condition :
+            if_body
+
+    e.g.
+    age = 19
+    if age > 18:
+        print("You are Eligible")
