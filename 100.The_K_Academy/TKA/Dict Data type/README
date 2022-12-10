@@ -1,0 +1,59 @@
+10] Dict data types
+it is un-ordered, Mutable, Heterogenious collection of element where data is stored in
+the from of key - value pair.
+
+** how to create dict object..?
+syntax:-
+    var_name = {}
+    type(var_name)
+    # o/p <class 'dict'>
+
+** How to add data into list??
+-> Syntax:
+        var_name = {}
+        var_name[key] = value
+   e.g.
+        oxford_dict = {}
+        oxford_dict['Python'] = "It's a simple prog lang"
+        print(oxford_dict)
+        # {'Python':"It's a simple prog lang"}
+
+        oxford_dict['data'] = "facts or information"
+        print(oxford_dict)
+        # {'Python':'It's a simple prog lang','data':'facts or information'}
+
+***Note***
+1] Dict keys must be unique and immutable.
+2] Value can be duplicates and mutable or immutable.
+
+Q* Create a dict of movies??
+    key must be name of the movies
+    values can be its cast in list from
+
+e.g.
+movies = {}
+movies['pushpa'] = ["Allu arjun", "rashmika Mandanna"]
+movies['brahmastra'] = ["Ranbir Kapur", "Alia Butt"]
+movies['Ram setu'] = ["Akshay Kumar", "Nusrratt"]
+movies['KGF'] = ["Yesh",  "Shriniddi Shetty"]
+movies["Marri"] = ["Dhanush",  "kajal Agrawal"]
+print(movies)
+O/p:-
+{'pushpa': ['Allu arjun', 'rashmika Mandanna'], 'brahmastra':
+['Ranbir Kapur', 'Alia Butt'], 'Ram setu': ['Akshay Kumar', 'Nusrratt'],
+ 'KGF': ['Yesh', 'Shriniddi Shetty'], 'Marri': ['Dhanush', 'kajal Agrawal']}
+
+
+***Dict data types method***
+There are 3 methods we have for dict
+i) keys()
+    var_name.keys()
+    -> This method will return list of all values.
+
+ii) values()
+    var_name.values()
+    -> This method will return list of all values.
+
+iii) items()
+    var_name.items()
+    -> This method will return list of all key_values pair in tuple.
