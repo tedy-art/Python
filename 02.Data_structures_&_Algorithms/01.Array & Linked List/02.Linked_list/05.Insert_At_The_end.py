@@ -5,7 +5,7 @@ class Node:
 class SLinkedList:
    def __init__(self):
       self.headval = None
-# Function to add newnode
+# Function_A to add newnode
    def AtEnd(self, newdata):
       NewNode = Node(newdata)
       if self.headval is None:

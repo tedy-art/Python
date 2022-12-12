@@ -13,7 +13,7 @@ class SLinkedList:
         NewNode.next = self.head
         self.head = NewNode
 
-    # Function to remove node
+    # Function_A to remove node
     def RemoveNode(self, Removekey):
         HeadVal = self.head
 

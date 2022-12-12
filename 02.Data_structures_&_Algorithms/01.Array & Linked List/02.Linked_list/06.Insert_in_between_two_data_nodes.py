@@ -6,7 +6,7 @@ class SLinkedList:
    def __init__(self):
       self.headval = None
 
-# Function to add node
+# Function_A to add node
    def Inbetween(self,middle_node,newdata):
       if middle_node is None:
          print("The mentioned node is absent")

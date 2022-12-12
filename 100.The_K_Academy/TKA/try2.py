@@ -1,4 +1,4 @@
-# l = [1,2,3,[4,5,6,['rahul','rajesh','raghi']]]
+     # l = [1,2,3,[4,5,6,['rahul','rajesh','raghi']]]
 # k = l[3][3][0:3]=["ram","Sham","Akshay"]
 # print(k)
 # print(l)
