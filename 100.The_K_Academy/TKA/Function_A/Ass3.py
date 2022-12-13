@@ -1,5 +1,4 @@
 def count_str():
-    # a = input("Get string from user : ")
     a = "Python"
     print("Inside in the function...")
     count = len(a)
