@@ -13,3 +13,5 @@ myfamily = {
     }
 }
 print(myfamily)
+s1 = myfamily["child3"]["year"]
+print(s1)

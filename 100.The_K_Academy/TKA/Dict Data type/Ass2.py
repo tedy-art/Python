@@ -10,4 +10,5 @@ usr_list = list(re)
 # print(usr_list)
 usr_list[1] = 'z'
 print(usr_list)
+
 print(movies)
