@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Github/Data_abstraction_py" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Github/Inheritance_py" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Github/Polymorphism_py" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Github/opp_in_py" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Projects/Employee_management_system_OOP_py" vcs="Git" />
   </component>
 </project>
