@@ -5,10 +5,16 @@
 
 IF STATEMENT :-
 syntax:-
+
+
+
 if expression
     statement(s)
 else
     statement(s)
+
+
+
 
 EX.
 def main():
