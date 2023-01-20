@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Display records</title>
+</head>
+<body>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="/index/">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/index/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/display/">Display</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <div class="jumbotron" style="text-align: center;">
+        <h1 class="display-4">Hello, it's my first project...</h1>
+        <p class="lead">
+            <!-- {{data}} -->
+            <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">sr_no</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Roll</th>
+                    <th scope="col">Marks</th>
+                  </tr>
+                </thead>
+                 <tbody>
+                    {% if data %}
+                    {% for i in data %}
+                    <tr>
+                        <th scope="row">{{i.id}}</th>
+                        <td><a href="/update/{{i.id}}/">{{i.name}}</a></td>
+                        <td>{{i.roll}}</td>
+                        <td>{{i.marks}}</td>
+                    </tr>
+                    {% endfor %}
+                    {% else %}
+                    <h3>Database is empty...</h3>
+                    {% endif %}
+                </tbody>
+            </table>
+        </p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Add more</a>
+        </p>
+      </div>
+</body>
+</html>
