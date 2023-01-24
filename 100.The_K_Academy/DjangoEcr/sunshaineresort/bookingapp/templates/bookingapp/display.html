@@ -12,17 +12,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>HomePage</title>
+    <title>DisplayPage</title>
 </head>
 <body id ="img_for_back" style="background-image: url(https://raw.githubusercontent.com/tedy-art/Python/master/100.The_K_Academy/DjangoEcr/sunshaineresort/bookingapp/static/images/hoomepage_background.webp); ">
-    
-  
+
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/bookingapp/index/">Sunshaine Resort</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -30,10 +30,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/bookingapp/booking/">Book here</a>
+            </li><li class="nav-item">
+              <a class="nav-link" href="/bookingapp/display/">Booking info</a>
             </li>
-          </li><li class="nav-item">
-            <a class="nav-link" href="/bookingapp/display/">Booking info</a>
-          </li>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,18 +57,52 @@
       </nav>
     <br>
     <br>
-    
+
     <div class="container">
 
       <div class="jumbotron" style="text-align: center; height: max-content;">
-          <h1 class="display-4">Sunshaine Resort</h1>
+          <h1 class="display-4">Sunshaine Resort Booking Information </h1>
           <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="/bookingapp/booking/" role="button">Book here</a>
-          </p>
+          <p>Online booking till today</p>
+          <hr class="my-4">
+          <!-- {{data}} -->
+
+          {% if data %}
+          <table class="table table-hover table-sm">
+              <thead>
+                    <tr>
+                        <th scope="col">Booking ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email ID</th>
+                        <th scope="col">Number of Days</th>
+                        <th scope="col">Booking Date</th>
+                        <th scope="col">Total Persons</th>
+                        <th scope="col">Room Type</th>
+                    </tr>
+              </thead>
+              <tbody>
+                    {% for i in data %}
+                    <tr>
+                        <th scope="row">{{i.booking_id}}</th>
+                        <td><a href="/bookingapp/update/{{i.booking_id}}">{{i.Name}}</a></td>
+                        <td>{{i.email_id}}</td>
+                        <td>{{i.days}}</td>
+                        <td>{{i.booking_date}}</td>
+                        <td>{{i.no_of_persons}}</td>
+                        <td>{{i.room_type}}</td>
+                    </tr>
+                    {% endfor %}
+              </tbody>
+        </table>
+
+          {% else %}
+          <p class="lead">No booking data found</p>
+          {% endif %}
+
+          <hr class="my-4">
+          <a href = "/bookingapp/booking/" type="button" class="btn btn-primary">Book More</a>
       </div>
     </div>
-    
+
 </body>
 </html>
