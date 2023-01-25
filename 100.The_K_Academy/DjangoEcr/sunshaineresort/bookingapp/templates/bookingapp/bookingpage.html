@@ -62,7 +62,7 @@
         <div class="container" >
           <h1 class="display-4">Book your Room</h1><br><hr>
           
-
+        <div class="form-group">
           <form action="" method="POST">{% csrf_token%}
             <br>
             Name : <input type="text" name="name" placeholder="Enter your name">
@@ -87,10 +87,12 @@
               <option value="DR">Deluxe Room</option>
               <option value="SD">Super Deluxe Room</option>
               <option value="TR">Tent</option>
-            </select><br><br>
+            </select>
+            <br>
+            <br>
             <button type="submit" class="btn-primary"> Submit </button>
-            
           </form>
+        </div>
         </div>
     </div>
     </div>
