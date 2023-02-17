@@ -3,5 +3,7 @@ u_input1 = int(input("Number 2 :"))
 
 if u_input < u_input1:
     print(f"{u_input} is small")
-elif u_input > u_input1:
+elif u_input1 < u_input:
     print(f"{u_input1} is small")
+else:
+    print("Number is equal")
