@@ -2,7 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/DjangoEcr/Hospital_management_system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Data_Science" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Django" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Github/Advanced Python/Exception_Handling_py" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Github/Advanced Python/File_handling_py" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Github/Data_abstraction_py" vcs="Git" />
@@ -10,5 +11,12 @@
     <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Github/Polymorphism_py" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Github/opp_in_py" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Projects/Employee_management_system_OOP_py" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/Projects/slot-machine-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/TKA/Data_abstraction_py" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/TKA/Inheritance_py" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/TKA/Polymorphism_py" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/TKA/opp_in_py" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/100.The_K_Academy/hospital_project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HackerRank" vcs="Git" />
   </component>
 </project>
