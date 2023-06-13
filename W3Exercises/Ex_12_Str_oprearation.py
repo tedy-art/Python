@@ -10,4 +10,3 @@ def new_str(text):
 
 print(new_str("Array"))
 print(new_str("IsEmpty"))
-
