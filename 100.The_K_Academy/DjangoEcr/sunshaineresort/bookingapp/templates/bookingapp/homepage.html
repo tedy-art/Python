@@ -12,13 +12,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <title>HomePage</title>
 </head>
 <body id ="img_for_back" style="background-image: url(https://raw.githubusercontent.com/tedy-art/Python/master/100.The_K_Academy/DjangoEcr/sunshaineresort/bookingapp/static/images/hoomepage_background.webp); ">
     
   
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/bookingapp/index/">Sunshaine Resort</a>
+        <a class="navbar-brand" href="/bookingapp/index/">Sunrise Resort</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,42 +35,108 @@
           </li><li class="nav-item">
             <a class="nav-link" href="/bookingapp/display/">Booking info</a>
           </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
       </nav>
-    <br>
-    <br>
-    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static 'images/resort5.jpg' %}" width="500" height="550" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-4">Sunrise Resort</h1>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="/bookingapp/booking/" role="button">Book here</a>
+            </p>
+            <p style="color: black; "><b>Wake up to the sound of waves lapping lazily at the shore. Uncover serenity and marvel at the wealth of beauty within the glittering blue seas. Give in to the siren song of the sun, sand and surf with Beach Retreats.</b></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'images/resort4.jpg' %}" width="500" height="550" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-4">Sunrise Resort</h1>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="/bookingapp/booking/" role="button">Book here</a>
+            </p>
+            <p><b>There is magic to be found in the energy of a bustling city. Where vibrant markets offer you everything you could imagine and centuries of history hide in the most unassuming places. Discover the world’s most spectacular urban hubs.</b></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'images/resort3.jpg' %}" width="500" height="550" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-4">Sunrise Resort</h1>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="/bookingapp/booking/" role="button">Book here</a>
+            </p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <br><br>
     <div class="container">
 
       <div class="jumbotron" style="text-align: center; height: max-content;">
-          <h1 class="display-4">Sunshaine Resort</h1>
+          <h1 class="display-4">Sunrise Resort</h1>
           <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="/bookingapp/booking/" role="button">Book here</a>
-          </p>
+          <p>Treat yourself and your loved ones to a relaxing staycation at our iconic city hotels.</p>
+          
       </div>
     </div>
-    
+    <section id="contact">
+      <div class="container">
+          <h3 class="text-center text-uppercase" style="color: white;">contact us</h3>
+          <p class="text-center w-75 m-auto"style="color: white;">"Immerse yourself in the beauty of nature and the warmth of our hospitality at Sunrise Resort. Let us create unforgettable memories for you and your loved ones."</p>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+              <div class="card border-0">
+                 <div class="card-body text-center">
+                   <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                   <h4 class="text-uppercase mb-5">call us</h4>
+                   <p>+91 0000000000,+91 0000000000</p>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+              <div class="card border-0">
+                 <div class="card-body text-center">
+                   <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                   <h4 class="text-uppercase mb-5">office loaction</h4>
+                  <address>Suite 02, Level 12, S Tropical Center </address>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+              <div class="card border-0">
+                 <div class="card-body text-center">
+                   <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                   <h4 class="text-uppercase mb-5">office loaction</h4>
+                   <address>Suite 02, Level 12, Sahera Tropical Center </address>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+              <div class="card border-0">
+                 <div class="card-body text-center">
+                   <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                   <h4 class="text-uppercase mb-5">email</h4>
+                   <p>http://sunriseresort@gmail.com</p>
+                 </div>
+               </div>
+            </div>
+          </div>
+      </div>
+   </section>
 </body>
 </html>
