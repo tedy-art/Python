@@ -1,6 +1,21 @@
-# wAP to print table of givien numbers
-n = 7
-# n = int(input("Enter table : "))
+def fib(n):
+    a = 0
+    b = 1
+    if n == 1:
+        print(a)
+    
+    elif n < 0:
+        print("Invalid Input! try another run")
 
-for i in range(10, 0, -1):
-    print(n,"*",i,"=",n*i)
+    else:
+        print(a)
+        print(b)
+
+        for i in range(2, n):
+            c = a + b
+            a = b
+            b = c
+        
+            print(c)
+
+fib(5)
